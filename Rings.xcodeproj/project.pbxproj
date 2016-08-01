@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7F0171F51D3D1F2400D918DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0171F41D3D1F2400D918DD /* AppDelegate.swift */; };
-		7F0171F71D3D1F2400D918DD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F0171F61D3D1F2400D918DD /* GameScene.sks */; };
 		7F0171F91D3D1F2400D918DD /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0171F81D3D1F2400D918DD /* GameScene.swift */; };
 		7F0171FB1D3D1F2400D918DD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0171FA1D3D1F2400D918DD /* GameViewController.swift */; };
 		7F0171FE1D3D1F2400D918DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0171FC1D3D1F2400D918DD /* Main.storyboard */; };
@@ -16,6 +15,82 @@
 		7F0172031D3D1F2400D918DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0172011D3D1F2400D918DD /* LaunchScreen.storyboard */; };
 		7F01720E1D3D1F2400D918DD /* RingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F01720D1D3D1F2400D918DD /* RingsTests.swift */; };
 		7F0172191D3D1F2400D918DD /* RingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0172181D3D1F2400D918DD /* RingsUITests.swift */; };
+		7F0172291D3D20E400D918DD /* HoleRing.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0172271D3D20E400D918DD /* HoleRing.png */; };
+		7F01722C1D3D213400D918DD /* Level3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F01722B1D3D213400D918DD /* Level3.sks */; };
+		7F01722E1D3D23F700D918DD /* MyActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F01722D1D3D23F700D918DD /* MyActions.sks */; };
+		7F0172821D3D29E500D918DD /* BallFinal2?.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0172311D3D29E500D918DD /* BallFinal2?.png */; };
+		7F19248B1D42601D0051E62B /* Level7.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F19248A1D42601D0051E62B /* Level7.sks */; };
+		7F19248D1D4278B80051E62B /* Level9.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F19248C1D4278B80051E62B /* Level9.sks */; };
+		7F1924901D429BE50051E62B /* NextButton3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F19248E1D429BE50051E62B /* NextButton3.png */; };
+		7F1924911D429BE50051E62B /* RestartButton4.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F19248F1D429BE50051E62B /* RestartButton4.png */; };
+		7F1924931D429C6C0051E62B /* levels2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1924921D429C6C0051E62B /* levels2.png */; };
+		7F1924971D42A9220051E62B /* Level10.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1924961D42A9220051E62B /* Level10.sks */; };
+		7F1A26761D479D8F008C825A /* WhiteBase.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26751D479D8F008C825A /* WhiteBase.png */; };
+		7F1A26781D47D55E008C825A /* Level12.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26771D47D55E008C825A /* Level12.sks */; };
+		7F1A267A1D47F675008C825A /* Level13.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26791D47F675008C825A /* Level13.sks */; };
+		7F1A267C1D4801F0008C825A /* Level14.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A267B1D4801F0008C825A /* Level14.sks */; };
+		7F1A267E1D4803D3008C825A /* Level15.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A267D1D4803D3008C825A /* Level15.sks */; };
+		7F1A26801D485098008C825A /* Level16.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A267F1D485098008C825A /* Level16.sks */; };
+		7F1A26821D485C41008C825A /* Level11.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26811D485C41008C825A /* Level11.sks */; };
+		7F1A26841D48E68A008C825A /* Level17.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26831D48E68A008C825A /* Level17.sks */; };
+		7F1A26861D48EADB008C825A /* Level18.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26851D48EADB008C825A /* Level18.sks */; };
+		7F1A26881D491177008C825A /* Level19.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26871D491177008C825A /* Level19.sks */; };
+		7F1A268A1D493A08008C825A /* Level20.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A26891D493A08008C825A /* Level20.sks */; };
+		7F1A268C1D4942E3008C825A /* Level21.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A268B1D4942E3008C825A /* Level21.sks */; };
+		7F1A268E1D494DA0008C825A /* Level22.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A268D1D494DA0008C825A /* Level22.sks */; };
+		7F1A26901D495457008C825A /* Level23.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F1A268F1D495457008C825A /* Level23.sks */; };
+		7F376F051D3D6E15004A7B76 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EF61D3D6E15004A7B76 /* MSButtonNode.swift */; };
+		7F376F061D3D6E15004A7B76 /* MSReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EF71D3D6E15004A7B76 /* MSReferenceNode.swift */; };
+		7F376F071D3D6E15004A7B76 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EF91D3D6E15004A7B76 /* CGFloat+Extensions.swift */; };
+		7F376F081D3D6E15004A7B76 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EFA1D3D6E15004A7B76 /* CGPoint+Extensions.swift */; };
+		7F376F091D3D6E15004A7B76 /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EFB1D3D6E15004A7B76 /* CGVector+Extensions.swift */; };
+		7F376F0A1D3D6E15004A7B76 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EFC1D3D6E15004A7B76 /* Int+Extensions.swift */; };
+		7F376F0B1D3D6E15004A7B76 /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EFD1D3D6E15004A7B76 /* SKAction+Extensions.swift */; };
+		7F376F0C1D3D6E15004A7B76 /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EFE1D3D6E15004A7B76 /* SKAction+SpecialEffects.swift */; };
+		7F376F0D1D3D6E15004A7B76 /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376EFF1D3D6E15004A7B76 /* SKColor+Extensions.swift */; };
+		7F376F0E1D3D6E15004A7B76 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376F001D3D6E15004A7B76 /* SKNode+Extensions.swift */; };
+		7F376F0F1D3D6E15004A7B76 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376F011D3D6E15004A7B76 /* SKTAudio.swift */; };
+		7F376F101D3D6E15004A7B76 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376F021D3D6E15004A7B76 /* SKTEffects.swift */; };
+		7F376F111D3D6E15004A7B76 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376F031D3D6E15004A7B76 /* SKTTimingFunctions.swift */; };
+		7F376F121D3D6E15004A7B76 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F376F041D3D6E15004A7B76 /* Vector3.swift */; };
+		7F376F161D3D7208004A7B76 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F376F151D3D7208004A7B76 /* GameScene.sks */; };
+		7F376F1C1D3E7856004A7B76 /* RestartButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F376F1B1D3E7856004A7B76 /* RestartButton2.png */; };
+		7F376F221D3E9DB1004A7B76 /* RingFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F376F211D3E9DB1004A7B76 /* RingFull.png */; };
+		7F376F241D3EA266004A7B76 /* Level2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F376F231D3EA266004A7B76 /* Level2.sks */; };
+		7F42C64B1D3EB2E000D3FC4B /* Ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F42C64A1D3EB2E000D3FC4B /* Ring.png */; };
+		7F42C64D1D3EB2F900D3FC4B /* RingSlit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F42C64C1D3EB2F900D3FC4B /* RingSlit.png */; };
+		7F4C42C01D3FEDE600AAA5A3 /* Level5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C42BF1D3FEDE600AAA5A3 /* Level5.sks */; };
+		7F4C42C21D3FF1E200AAA5A3 /* Ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4C42C11D3FF1E200AAA5A3 /* Ball.png */; };
+		7F563D931D4A45F8003600DB /* Level24.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D921D4A45F8003600DB /* Level24.sks */; };
+		7F563D951D4A51D2003600DB /* Level25.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D941D4A51D2003600DB /* Level25.sks */; };
+		7F563D971D4A5ADB003600DB /* Level26.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D961D4A5ADB003600DB /* Level26.sks */; };
+		7F563D991D4A7DF9003600DB /* Level27.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D981D4A7DF9003600DB /* Level27.sks */; };
+		7F563D9B1D4B9655003600DB /* Level28.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D9A1D4B9655003600DB /* Level28.sks */; };
+		7F563D9D1D4BA04A003600DB /* Arc.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D9C1D4BA04A003600DB /* Arc.png */; };
+		7F563D9F1D4BB027003600DB /* Level29.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563D9E1D4BB027003600DB /* Level29.sks */; };
+		7F563DA11D4BD9C2003600DB /* Level30.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F563DA01D4BD9C2003600DB /* Level30.sks */; };
+		7F593AC11D41026800702E5E /* Base2 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F593AC01D41026800702E5E /* Base2 copy.png */; };
+		7F593AC31D410C0300702E5E /* LevelSelect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F593AC21D410C0300702E5E /* LevelSelect.sks */; };
+		7F593AC51D410D2600702E5E /* Block.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F593AC41D410D2600702E5E /* Block.png */; };
+		7F593AC71D410E5400702E5E /* ButtonSelect2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F593AC61D410E5400702E5E /* ButtonSelect2.png */; };
+		7F593AC91D4110A600702E5E /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F593AC81D4110A600702E5E /* LevelSelect.swift */; };
+		7F593ACB1D4117D600702E5E /* Level1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F593ACA1D4117D600702E5E /* Level1.sks */; };
+		7F593ACD1D4125FF00702E5E /* levels.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F593ACC1D4125FF00702E5E /* levels.png */; };
+		7F593ACF1D413AAB00702E5E /* Level6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7F593ACE1D413AAB00702E5E /* Level6.sks */; };
+		7F593AD11D413FC000702E5E /* Maze.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F593AD01D413FC000702E5E /* Maze.png */; };
+		7F5D94741D40139E005DF4CB /* Base2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D94731D40139E005DF4CB /* Base2.png */; };
+		7FA103801D46637E00AA9028 /* ButtonSelect3.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA1037F1D46637E00AA9028 /* ButtonSelect3.png */; };
+		7FA103851D46649800AA9028 /* TryAgain.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA103841D46649800AA9028 /* TryAgain.png */; };
+		7FA1038C1D466FCF00AA9028 /* Screen Shot 2016-07-25 at 12.03.08 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA1038B1D466FCF00AA9028 /* Screen Shot 2016-07-25 at 12.03.08 PM.png */; };
+		7FA1038E1D46831600AA9028 /* Screen Shot 2016-07-25 at 1.25.31 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FA1038D1D46831600AA9028 /* Screen Shot 2016-07-25 at 1.25.31 PM.png */; };
+		7FC698AB1D415B3A0060CECE /* Level8.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FC698AA1D415B3A0060CECE /* Level8.sks */; };
+		7FE1B8601D3D568100F53076 /* Intro.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FE1B85F1D3D568100F53076 /* Intro.sks */; };
+		7FE1B8621D3D597100F53076 /* Level4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FE1B8611D3D597100F53076 /* Level4.sks */; };
+		7FE1BDDE1D4BE3A70071C2EF /* Level31.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FE1BDDD1D4BE3A70071C2EF /* Level31.sks */; };
+		7FE1BDE01D4DC6C20071C2EF /* Level32.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FE1BDDF1D4DC6C20071C2EF /* Level32.sks */; };
+		7FECB7541D3FBE2B00DC738B /* goal1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FECB7531D3FBE2B00DC738B /* goal1.png */; };
+		7FECB7561D3FBE3300DC738B /* goal2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FECB7551D3FBE3300DC738B /* goal2.png */; };
+		7FECB7581D3FBE5C00DC738B /* Goal.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7FECB7571D3FBE5C00DC738B /* Goal.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +113,6 @@
 /* Begin PBXFileReference section */
 		7F0171F11D3D1F2400D918DD /* Rings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0171F41D3D1F2400D918DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7F0171F61D3D1F2400D918DD /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		7F0171F81D3D1F2400D918DD /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7F0171FA1D3D1F2400D918DD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		7F0171FD1D3D1F2400D918DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +125,82 @@
 		7F0172141D3D1F2400D918DD /* RingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0172181D3D1F2400D918DD /* RingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingsUITests.swift; sourceTree = "<group>"; };
 		7F01721A1D3D1F2400D918DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F0172271D3D20E400D918DD /* HoleRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HoleRing.png; sourceTree = "<group>"; };
+		7F01722B1D3D213400D918DD /* Level3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level3.sks; path = "Rings Assets/Level3.sks"; sourceTree = "<group>"; };
+		7F01722D1D3D23F700D918DD /* MyActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyActions.sks; sourceTree = "<group>"; };
+		7F0172311D3D29E500D918DD /* BallFinal2?.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BallFinal2?.png"; path = "../RingAssets/BallFinal2?.png"; sourceTree = "<group>"; };
+		7F19248A1D42601D0051E62B /* Level7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level7.sks; sourceTree = "<group>"; };
+		7F19248C1D4278B80051E62B /* Level9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level9.sks; sourceTree = "<group>"; };
+		7F19248E1D429BE50051E62B /* NextButton3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextButton3.png; sourceTree = "<group>"; };
+		7F19248F1D429BE50051E62B /* RestartButton4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestartButton4.png; sourceTree = "<group>"; };
+		7F1924921D429C6C0051E62B /* levels2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levels2.png; sourceTree = "<group>"; };
+		7F1924961D42A9220051E62B /* Level10.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level10.sks; sourceTree = "<group>"; };
+		7F1A26751D479D8F008C825A /* WhiteBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteBase.png; sourceTree = "<group>"; };
+		7F1A26771D47D55E008C825A /* Level12.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level12.sks; sourceTree = "<group>"; };
+		7F1A26791D47F675008C825A /* Level13.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level13.sks; sourceTree = "<group>"; };
+		7F1A267B1D4801F0008C825A /* Level14.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level14.sks; sourceTree = "<group>"; };
+		7F1A267D1D4803D3008C825A /* Level15.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level15.sks; sourceTree = "<group>"; };
+		7F1A267F1D485098008C825A /* Level16.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level16.sks; sourceTree = "<group>"; };
+		7F1A26811D485C41008C825A /* Level11.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level11.sks; sourceTree = "<group>"; };
+		7F1A26831D48E68A008C825A /* Level17.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level17.sks; sourceTree = "<group>"; };
+		7F1A26851D48EADB008C825A /* Level18.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level18.sks; path = ../Level18.sks; sourceTree = "<group>"; };
+		7F1A26871D491177008C825A /* Level19.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level19.sks; sourceTree = "<group>"; };
+		7F1A26891D493A08008C825A /* Level20.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level20.sks; sourceTree = "<group>"; };
+		7F1A268B1D4942E3008C825A /* Level21.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Level21.sks; path = ../Level21.sks; sourceTree = "<group>"; };
+		7F1A268D1D494DA0008C825A /* Level22.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level22.sks; sourceTree = "<group>"; };
+		7F1A268F1D495457008C825A /* Level23.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level23.sks; sourceTree = "<group>"; };
+		7F376EF61D3D6E15004A7B76 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		7F376EF71D3D6E15004A7B76 /* MSReferenceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSReferenceNode.swift; sourceTree = "<group>"; };
+		7F376EF91D3D6E15004A7B76 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		7F376EFA1D3D6E15004A7B76 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		7F376EFB1D3D6E15004A7B76 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		7F376EFC1D3D6E15004A7B76 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		7F376EFD1D3D6E15004A7B76 /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		7F376EFE1D3D6E15004A7B76 /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		7F376EFF1D3D6E15004A7B76 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		7F376F001D3D6E15004A7B76 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		7F376F011D3D6E15004A7B76 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		7F376F021D3D6E15004A7B76 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		7F376F031D3D6E15004A7B76 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		7F376F041D3D6E15004A7B76 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		7F376F151D3D7208004A7B76 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		7F376F1B1D3E7856004A7B76 /* RestartButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestartButton2.png; sourceTree = "<group>"; };
+		7F376F211D3E9DB1004A7B76 /* RingFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingFull.png; sourceTree = "<group>"; };
+		7F376F231D3EA266004A7B76 /* Level2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level2.sks; sourceTree = "<group>"; };
+		7F42C64A1D3EB2E000D3FC4B /* Ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ring.png; sourceTree = "<group>"; };
+		7F42C64C1D3EB2F900D3FC4B /* RingSlit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RingSlit.png; sourceTree = "<group>"; };
+		7F4C42BF1D3FEDE600AAA5A3 /* Level5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level5.sks; sourceTree = "<group>"; };
+		7F4C42C11D3FF1E200AAA5A3 /* Ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball.png; sourceTree = "<group>"; };
+		7F563D921D4A45F8003600DB /* Level24.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level24.sks; sourceTree = "<group>"; };
+		7F563D941D4A51D2003600DB /* Level25.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level25.sks; sourceTree = "<group>"; };
+		7F563D961D4A5ADB003600DB /* Level26.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level26.sks; sourceTree = "<group>"; };
+		7F563D981D4A7DF9003600DB /* Level27.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level27.sks; sourceTree = "<group>"; };
+		7F563D9A1D4B9655003600DB /* Level28.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level28.sks; sourceTree = "<group>"; };
+		7F563D9C1D4BA04A003600DB /* Arc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arc.png; sourceTree = "<group>"; };
+		7F563D9E1D4BB027003600DB /* Level29.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level29.sks; sourceTree = "<group>"; };
+		7F563DA01D4BD9C2003600DB /* Level30.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level30.sks; sourceTree = "<group>"; };
+		7F593AC01D41026800702E5E /* Base2 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Base2 copy.png"; sourceTree = "<group>"; };
+		7F593AC21D410C0300702E5E /* LevelSelect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelect.sks; sourceTree = "<group>"; };
+		7F593AC41D410D2600702E5E /* Block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Block.png; sourceTree = "<group>"; };
+		7F593AC61D410E5400702E5E /* ButtonSelect2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSelect2.png; sourceTree = "<group>"; };
+		7F593AC81D4110A600702E5E /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
+		7F593ACA1D4117D600702E5E /* Level1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level1.sks; sourceTree = "<group>"; };
+		7F593ACC1D4125FF00702E5E /* levels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levels.png; sourceTree = "<group>"; };
+		7F593ACE1D413AAB00702E5E /* Level6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level6.sks; sourceTree = "<group>"; };
+		7F593AD01D413FC000702E5E /* Maze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Maze.png; sourceTree = "<group>"; };
+		7F5D94731D40139E005DF4CB /* Base2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Base2.png; sourceTree = "<group>"; };
+		7FA1037F1D46637E00AA9028 /* ButtonSelect3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSelect3.png; sourceTree = "<group>"; };
+		7FA103841D46649800AA9028 /* TryAgain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TryAgain.png; sourceTree = "<group>"; };
+		7FA1038B1D466FCF00AA9028 /* Screen Shot 2016-07-25 at 12.03.08 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-07-25 at 12.03.08 PM.png"; sourceTree = "<group>"; };
+		7FA1038D1D46831600AA9028 /* Screen Shot 2016-07-25 at 1.25.31 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-07-25 at 1.25.31 PM.png"; sourceTree = "<group>"; };
+		7FC698AA1D415B3A0060CECE /* Level8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level8.sks; sourceTree = "<group>"; };
+		7FE1B85F1D3D568100F53076 /* Intro.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Intro.sks; sourceTree = "<group>"; };
+		7FE1B8611D3D597100F53076 /* Level4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level4.sks; sourceTree = "<group>"; };
+		7FE1BDDD1D4BE3A70071C2EF /* Level31.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level31.sks; sourceTree = "<group>"; };
+		7FE1BDDF1D4DC6C20071C2EF /* Level32.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level32.sks; sourceTree = "<group>"; };
+		7FECB7531D3FBE2B00DC738B /* goal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal1.png; sourceTree = "<group>"; };
+		7FECB7551D3FBE3300DC738B /* goal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goal2.png; sourceTree = "<group>"; };
+		7FECB7571D3FBE5C00DC738B /* Goal.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Goal.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +231,7 @@
 		7F0171E81D3D1F2400D918DD = {
 			isa = PBXGroup;
 			children = (
+				7F01722D1D3D23F700D918DD /* MyActions.sks */,
 				7F0171F31D3D1F2400D918DD /* Rings */,
 				7F01720C1D3D1F2400D918DD /* RingsTests */,
 				7F0172171D3D1F2400D918DD /* RingsUITests */,
@@ -102,11 +253,49 @@
 			isa = PBXGroup;
 			children = (
 				7F0171F41D3D1F2400D918DD /* AppDelegate.swift */,
-				7F0171F61D3D1F2400D918DD /* GameScene.sks */,
 				7F0171F81D3D1F2400D918DD /* GameScene.swift */,
+				7F376F151D3D7208004A7B76 /* GameScene.sks */,
+				7FECB7571D3FBE5C00DC738B /* Goal.sks */,
 				7F0171FA1D3D1F2400D918DD /* GameViewController.swift */,
 				7F0171FC1D3D1F2400D918DD /* Main.storyboard */,
+				7FE1B85F1D3D568100F53076 /* Intro.sks */,
+				7F593AC21D410C0300702E5E /* LevelSelect.sks */,
+				7F593AC81D4110A600702E5E /* LevelSelect.swift */,
+				7F593ACA1D4117D600702E5E /* Level1.sks */,
+				7F376F231D3EA266004A7B76 /* Level2.sks */,
+				7F01722B1D3D213400D918DD /* Level3.sks */,
+				7FE1B8611D3D597100F53076 /* Level4.sks */,
+				7F4C42BF1D3FEDE600AAA5A3 /* Level5.sks */,
+				7F593ACE1D413AAB00702E5E /* Level6.sks */,
+				7F19248A1D42601D0051E62B /* Level7.sks */,
+				7FC698AA1D415B3A0060CECE /* Level8.sks */,
+				7F19248C1D4278B80051E62B /* Level9.sks */,
+				7F1924961D42A9220051E62B /* Level10.sks */,
+				7F1A26811D485C41008C825A /* Level11.sks */,
+				7F1A26771D47D55E008C825A /* Level12.sks */,
+				7F1A26791D47F675008C825A /* Level13.sks */,
+				7F1A267B1D4801F0008C825A /* Level14.sks */,
+				7F1A267D1D4803D3008C825A /* Level15.sks */,
+				7F1A267F1D485098008C825A /* Level16.sks */,
+				7F1A26831D48E68A008C825A /* Level17.sks */,
+				7F1A26851D48EADB008C825A /* Level18.sks */,
+				7F1A26871D491177008C825A /* Level19.sks */,
+				7F1A26891D493A08008C825A /* Level20.sks */,
+				7F1A268B1D4942E3008C825A /* Level21.sks */,
+				7F1A268D1D494DA0008C825A /* Level22.sks */,
+				7F1A268F1D495457008C825A /* Level23.sks */,
+				7F563D921D4A45F8003600DB /* Level24.sks */,
+				7F563D941D4A51D2003600DB /* Level25.sks */,
+				7F563D961D4A5ADB003600DB /* Level26.sks */,
+				7F563D981D4A7DF9003600DB /* Level27.sks */,
+				7F563D9A1D4B9655003600DB /* Level28.sks */,
+				7F563D9E1D4BB027003600DB /* Level29.sks */,
+				7F563DA01D4BD9C2003600DB /* Level30.sks */,
+				7FE1BDDD1D4BE3A70071C2EF /* Level31.sks */,
+				7FE1BDDF1D4DC6C20071C2EF /* Level32.sks */,
 				7F0171FF1D3D1F2400D918DD /* Assets.xcassets */,
+				7F376EF51D3D6E15004A7B76 /* Utils */,
+				7F0172261D3D20E400D918DD /* Rings Assets */,
 				7F0172011D3D1F2400D918DD /* LaunchScreen.storyboard */,
 				7F0172041D3D1F2400D918DD /* Info.plist */,
 			);
@@ -129,6 +318,66 @@
 				7F01721A1D3D1F2400D918DD /* Info.plist */,
 			);
 			path = RingsUITests;
+			sourceTree = "<group>";
+		};
+		7F0172261D3D20E400D918DD /* Rings Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7F563D9C1D4BA04A003600DB /* Arc.png */,
+				7F1A26751D479D8F008C825A /* WhiteBase.png */,
+				7FA1038D1D46831600AA9028 /* Screen Shot 2016-07-25 at 1.25.31 PM.png */,
+				7FA1038B1D466FCF00AA9028 /* Screen Shot 2016-07-25 at 12.03.08 PM.png */,
+				7FA103841D46649800AA9028 /* TryAgain.png */,
+				7FA1037F1D46637E00AA9028 /* ButtonSelect3.png */,
+				7F1924921D429C6C0051E62B /* levels2.png */,
+				7F19248E1D429BE50051E62B /* NextButton3.png */,
+				7F19248F1D429BE50051E62B /* RestartButton4.png */,
+				7F593AD01D413FC000702E5E /* Maze.png */,
+				7F593ACC1D4125FF00702E5E /* levels.png */,
+				7F42C64C1D3EB2F900D3FC4B /* RingSlit.png */,
+				7F593AC01D41026800702E5E /* Base2 copy.png */,
+				7F42C64A1D3EB2E000D3FC4B /* Ring.png */,
+				7F5D94731D40139E005DF4CB /* Base2.png */,
+				7F593AC41D410D2600702E5E /* Block.png */,
+				7FECB7531D3FBE2B00DC738B /* goal1.png */,
+				7FECB7551D3FBE3300DC738B /* goal2.png */,
+				7F4C42C11D3FF1E200AAA5A3 /* Ball.png */,
+				7F593AC61D410E5400702E5E /* ButtonSelect2.png */,
+				7F376F211D3E9DB1004A7B76 /* RingFull.png */,
+				7F376F1B1D3E7856004A7B76 /* RestartButton2.png */,
+				7F0172311D3D29E500D918DD /* BallFinal2?.png */,
+				7F0172271D3D20E400D918DD /* HoleRing.png */,
+			);
+			path = "Rings Assets";
+			sourceTree = "<group>";
+		};
+		7F376EF51D3D6E15004A7B76 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7F376EF61D3D6E15004A7B76 /* MSButtonNode.swift */,
+				7F376EF71D3D6E15004A7B76 /* MSReferenceNode.swift */,
+				7F376EF81D3D6E15004A7B76 /* SKTUtils */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7F376EF81D3D6E15004A7B76 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				7F376EF91D3D6E15004A7B76 /* CGFloat+Extensions.swift */,
+				7F376EFA1D3D6E15004A7B76 /* CGPoint+Extensions.swift */,
+				7F376EFB1D3D6E15004A7B76 /* CGVector+Extensions.swift */,
+				7F376EFC1D3D6E15004A7B76 /* Int+Extensions.swift */,
+				7F376EFD1D3D6E15004A7B76 /* SKAction+Extensions.swift */,
+				7F376EFE1D3D6E15004A7B76 /* SKAction+SpecialEffects.swift */,
+				7F376EFF1D3D6E15004A7B76 /* SKColor+Extensions.swift */,
+				7F376F001D3D6E15004A7B76 /* SKNode+Extensions.swift */,
+				7F376F011D3D6E15004A7B76 /* SKTAudio.swift */,
+				7F376F021D3D6E15004A7B76 /* SKTEffects.swift */,
+				7F376F031D3D6E15004A7B76 /* SKTTimingFunctions.swift */,
+				7F376F041D3D6E15004A7B76 /* Vector3.swift */,
+			);
+			path = SKTUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +448,7 @@
 				TargetAttributes = {
 					7F0171F01D3D1F2400D918DD = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3YAF75BF24;
 					};
 					7F0172081D3D1F2400D918DD = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -235,10 +485,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F0171F71D3D1F2400D918DD /* GameScene.sks in Resources */,
+				7FC698AB1D415B3A0060CECE /* Level8.sks in Resources */,
+				7F563D9B1D4B9655003600DB /* Level28.sks in Resources */,
+				7F563D991D4A7DF9003600DB /* Level27.sks in Resources */,
+				7FE1BDDE1D4BE3A70071C2EF /* Level31.sks in Resources */,
+				7F593ACD1D4125FF00702E5E /* levels.png in Resources */,
+				7FA103851D46649800AA9028 /* TryAgain.png in Resources */,
+				7F563D931D4A45F8003600DB /* Level24.sks in Resources */,
+				7F1A26901D495457008C825A /* Level23.sks in Resources */,
+				7F1A26801D485098008C825A /* Level16.sks in Resources */,
+				7FECB7541D3FBE2B00DC738B /* goal1.png in Resources */,
+				7F593AC11D41026800702E5E /* Base2 copy.png in Resources */,
+				7FECB7581D3FBE5C00DC738B /* Goal.sks in Resources */,
+				7F563D971D4A5ADB003600DB /* Level26.sks in Resources */,
+				7F593AD11D413FC000702E5E /* Maze.png in Resources */,
+				7F1A268A1D493A08008C825A /* Level20.sks in Resources */,
+				7F19248B1D42601D0051E62B /* Level7.sks in Resources */,
+				7F376F161D3D7208004A7B76 /* GameScene.sks in Resources */,
+				7F1A26761D479D8F008C825A /* WhiteBase.png in Resources */,
+				7F0172821D3D29E500D918DD /* BallFinal2?.png in Resources */,
+				7F1A26841D48E68A008C825A /* Level17.sks in Resources */,
+				7F42C64D1D3EB2F900D3FC4B /* RingSlit.png in Resources */,
+				7F1924931D429C6C0051E62B /* levels2.png in Resources */,
+				7F1A267E1D4803D3008C825A /* Level15.sks in Resources */,
+				7F1A268E1D494DA0008C825A /* Level22.sks in Resources */,
+				7F1A267A1D47F675008C825A /* Level13.sks in Resources */,
+				7F563D9D1D4BA04A003600DB /* Arc.png in Resources */,
+				7F593AC51D410D2600702E5E /* Block.png in Resources */,
+				7F376F1C1D3E7856004A7B76 /* RestartButton2.png in Resources */,
+				7F563DA11D4BD9C2003600DB /* Level30.sks in Resources */,
 				7F0172031D3D1F2400D918DD /* LaunchScreen.storyboard in Resources */,
+				7FA1038E1D46831600AA9028 /* Screen Shot 2016-07-25 at 1.25.31 PM.png in Resources */,
+				7F1A268C1D4942E3008C825A /* Level21.sks in Resources */,
+				7FE1B8601D3D568100F53076 /* Intro.sks in Resources */,
+				7F593AC31D410C0300702E5E /* LevelSelect.sks in Resources */,
+				7F4C42C21D3FF1E200AAA5A3 /* Ball.png in Resources */,
+				7F1924971D42A9220051E62B /* Level10.sks in Resources */,
+				7F0172291D3D20E400D918DD /* HoleRing.png in Resources */,
+				7F563D9F1D4BB027003600DB /* Level29.sks in Resources */,
+				7F4C42C01D3FEDE600AAA5A3 /* Level5.sks in Resources */,
+				7F01722E1D3D23F700D918DD /* MyActions.sks in Resources */,
+				7FE1BDE01D4DC6C20071C2EF /* Level32.sks in Resources */,
+				7F376F221D3E9DB1004A7B76 /* RingFull.png in Resources */,
 				7F0172001D3D1F2400D918DD /* Assets.xcassets in Resources */,
 				7F0171FE1D3D1F2400D918DD /* Main.storyboard in Resources */,
+				7F1924901D429BE50051E62B /* NextButton3.png in Resources */,
+				7FA103801D46637E00AA9028 /* ButtonSelect3.png in Resources */,
+				7F1A26781D47D55E008C825A /* Level12.sks in Resources */,
+				7FECB7561D3FBE3300DC738B /* goal2.png in Resources */,
+				7FA1038C1D466FCF00AA9028 /* Screen Shot 2016-07-25 at 12.03.08 PM.png in Resources */,
+				7F42C64B1D3EB2E000D3FC4B /* Ring.png in Resources */,
+				7F1A26821D485C41008C825A /* Level11.sks in Resources */,
+				7F593ACF1D413AAB00702E5E /* Level6.sks in Resources */,
+				7F1A26881D491177008C825A /* Level19.sks in Resources */,
+				7F593ACB1D4117D600702E5E /* Level1.sks in Resources */,
+				7F01722C1D3D213400D918DD /* Level3.sks in Resources */,
+				7F1A26861D48EADB008C825A /* Level18.sks in Resources */,
+				7F19248D1D4278B80051E62B /* Level9.sks in Resources */,
+				7F563D951D4A51D2003600DB /* Level25.sks in Resources */,
+				7F1924911D429BE50051E62B /* RestartButton4.png in Resources */,
+				7F376F241D3EA266004A7B76 /* Level2.sks in Resources */,
+				7F5D94741D40139E005DF4CB /* Base2.png in Resources */,
+				7F593AC71D410E5400702E5E /* ButtonSelect2.png in Resources */,
+				7F1A267C1D4801F0008C825A /* Level14.sks in Resources */,
+				7FE1B8621D3D597100F53076 /* Level4.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,8 +574,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F0171F91D3D1F2400D918DD /* GameScene.swift in Sources */,
+				7F376F111D3D6E15004A7B76 /* SKTTimingFunctions.swift in Sources */,
 				7F0171FB1D3D1F2400D918DD /* GameViewController.swift in Sources */,
+				7F376F091D3D6E15004A7B76 /* CGVector+Extensions.swift in Sources */,
+				7F376F081D3D6E15004A7B76 /* CGPoint+Extensions.swift in Sources */,
+				7F376F071D3D6E15004A7B76 /* CGFloat+Extensions.swift in Sources */,
+				7F593AC91D4110A600702E5E /* LevelSelect.swift in Sources */,
+				7F376F0F1D3D6E15004A7B76 /* SKTAudio.swift in Sources */,
 				7F0171F51D3D1F2400D918DD /* AppDelegate.swift in Sources */,
+				7F376F0E1D3D6E15004A7B76 /* SKNode+Extensions.swift in Sources */,
+				7F376F0B1D3D6E15004A7B76 /* SKAction+Extensions.swift in Sources */,
+				7F376F0C1D3D6E15004A7B76 /* SKAction+SpecialEffects.swift in Sources */,
+				7F376F051D3D6E15004A7B76 /* MSButtonNode.swift in Sources */,
+				7F376F061D3D6E15004A7B76 /* MSReferenceNode.swift in Sources */,
+				7F376F101D3D6E15004A7B76 /* SKTEffects.swift in Sources */,
+				7F376F0A1D3D6E15004A7B76 /* Int+Extensions.swift in Sources */,
+				7F376F121D3D6E15004A7B76 /* Vector3.swift in Sources */,
+				7F376F0D1D3D6E15004A7B76 /* SKColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +734,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacharyfriedman.Rings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -420,10 +748,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Rings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zacharyfriedman.Rings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -494,6 +825,7 @@
 				7F01721F1D3D1F2400D918DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F0172201D3D1F2400D918DD /* Build configuration list for PBXNativeTarget "RingsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +834,7 @@
 				7F0172221D3D1F2400D918DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F0172231D3D1F2400D918DD /* Build configuration list for PBXNativeTarget "RingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +843,7 @@
 				7F0172251D3D1F2400D918DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
