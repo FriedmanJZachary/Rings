@@ -3,7 +3,7 @@
 //  Rings
 //
 //  Created by Zachary Friedman on 7/18/16.
-//  Copyright (c) 2016 Idk Man. All rights reserved.
+//  Copyright (c) 2016 Ellex All rights reserved.
 //
 
 import Foundation
@@ -18,6 +18,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var ball: SKSpriteNode!
     var backButton: MSButtonNode!
     var restartButton: MSButtonNode!
+    var centrifugeButton: MSButtonNode?
     var lastBase: SKNode?
     var level: SKNode?
     
@@ -26,6 +27,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var levelUpTo = (NSUserDefaults.standardUserDefaults().objectForKey("LevelUpTo") ?? 0) as! Int
     var currentLevel = (NSUserDefaults.standardUserDefaults().objectForKey("LevelUpTo") ?? 0) as! Int
+    
+    let Teleport = SKAction.playSoundFileNamed("Die3.wav", waitForCompletion: false)
+    let Move = SKAction.playSoundFileNamed("Move5.wav", waitForCompletion: false)
+    let Ding = SKAction.playSoundFileNamed("Ding5.wav", waitForCompletion: false)
+    let GoalReached = SKAction.playSoundFileNamed("GoalSound2.wav", waitForCompletion: false)
+    let Lose = SKAction.playSoundFileNamed("Lose3.wav", waitForCompletion: false)
 
     
     var game: GameState = .Play
@@ -39,12 +46,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         cameraEmpty = self.childNodeWithName("cameraEmpty") as SKNode!
         backButton = self.childNodeWithName("//backButton") as! MSButtonNode
         restartButton = self.childNodeWithName("//restartButton") as! MSButtonNode
+
+
         
         //Set up physics/background world
         self.view?.showsPhysics = false
         physicsWorld.contactDelegate = self
-        self.scene?.backgroundColor = UIColor(red: 16/255, green: 25/255, blue: 41/255, alpha: 1)
-        
+
         //load current level as reference node
         
         let resourcePath = NSBundle.mainBundle().pathForResource("Level\(currentLevel + 1)", ofType: "sks")
@@ -58,9 +66,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         NSUserDefaults.standardUserDefaults().synchronize()
         
         backButton.selectedHandler = {
-            
-            /* Grab reference to our SpriteKit view */
-            let skView = self.view as SKView!
+            [unowned self] in
             
             /* Load Game scene */
             let scene = LevelSelect(fileNamed: "LevelSelect")
@@ -70,16 +76,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             scene!.scaleMode = .AspectFill
             
             /* Restart game scene */
-            skView.presentScene(scene)
+            self.view!.presentScene(scene)
             
             
         }
         
         restartButton.selectedHandler = {
-            
-            /* Grab reference to our SpriteKit view */
-            let skView = self.view as SKView!
-            
+            [unowned self] in
             /* Load Game scene */
             let scene = GameScene(fileNamed: "GameScene")
             
@@ -89,6 +92,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             scene!.scaleMode = .AspectFill
             
             /* Restart game scene */
+            self.view!.presentScene(scene)
+            
+            
+        }
+        
+        centrifugeButton = self.childNodeWithName("//centrifugeButton") as? MSButtonNode
+        centrifugeButton?.selectedHandler = {
+            [unowned self] in
+            /* Load Game scene */
+            let scene = GameSceneCentrifuge(fileNamed:"GameSceneCentrifuge")
+            
+            
+            let skView = self.view!
+            
+            /* Ensure correct aspect mode */
+            scene!.scaleMode = .AspectFit
+            
+            /* Show debug */
+            skView.showsPhysics = false
+            skView.showsDrawCount = false
+            skView.showsFPS = false
+            
+            /* Start game scene */
             skView.presentScene(scene)
             
             
@@ -108,6 +134,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             let location = touch.locationInNode(self)
     
+            //Check if ball is within a "touchless" zone; if so, don't move it
             let absolutePos = ball.convertPoint(CGPoint(x: 0.0, y: 0.0), toNode: self)
             for child in level!.children {
                 if child.name == "touchless" {
@@ -151,6 +178,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             let yNorm = y/vector * forceConst
             
             ball.physicsBody?.velocity = CGVector(dx: xNorm, dy: yNorm)
+            runAction(Move)
             
         }
 
@@ -237,12 +265,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
             } else if (nodeA.name! == "ball" && nodeB.name!.containsString("Portal")) {
                 ball.removeAllActions()
+                runAction(Teleport)
                 
                 ball.physicsBody!.velocity = CGVector(dx: 0.0, dy: 0.0)
                 ball.runAction(SKAction.sequence([SKAction.moveTo(nodeB.convertPoint(CGPoint(x: 0.0, y: 0.0),toNode: self), duration: 0.5), SKAction.runBlock({
                         let portalChild = nodeB.children[0]
                         let destination = portalChild.convertPoint(CGPoint(x: 0.0, y: 0.0),toNode: self)
-                        self.ball.runAction(SKAction.moveTo(destination, duration: 0))
+                        self.ball.physicsBody?.contactTestBitMask = 0
+                    self.ball.runAction(SKAction.sequence(
+                        [SKAction.moveTo(destination, duration: 0),
+                            SKAction.runBlock({
+                        
+                                    self.ball.physicsBody?.contactTestBitMask = 0xffffffff
+                    
+                            })
+                        ]))
                     })
                 ]))
 
@@ -250,25 +287,38 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
             } else if (nodeA.name!.containsString("Portal") && nodeB.name == "ball") {
                 ball.removeAllActions()
+                runAction(Teleport)
                 
                 ball.physicsBody!.velocity = CGVector(dx: 0.0, dy: 0.0)
                 ball.runAction(SKAction.sequence([SKAction.moveTo(nodeA.convertPoint(CGPoint(x: 0.0, y: 0.0),toNode: self), duration: 0.5), SKAction.runBlock({
                         let portalChild = nodeA.children[0]
                         let destination = portalChild.convertPoint(CGPoint(x: 0.0, y: 0.0),toNode: self)
-                        self.ball.runAction(SKAction.moveTo(destination, duration: 0))
-                    })
-                ]))
+                    self.ball.physicsBody?.contactTestBitMask = 0
+                    self.ball.runAction(SKAction.sequence(
+                        [SKAction.moveTo(destination, duration: 0),
+                            SKAction.runBlock({
+                                
+                                self.ball.physicsBody?.contactTestBitMask = 0xffffffff
+                                
+                            })
+                        ]))
+                })
+                    ]))
 
                 
+            } else if (nodeA.name == "ball" || nodeB.name == "ball") {
+                runAction(Ding)
             }
         }
     }
     
     func gameOver() {
         
+        runAction(Lose)
         game = .GameOver
         ball.physicsBody?.velocity = CGVector(dx: 0.0, dy: 0.0)
         ball.physicsBody?.dynamic = false
+        ball.removeAllActions()
         ball.runAction(SKAction.sequence([SKAction.runBlock({self.ball.removeAllChildren()}), SKAction.scaleBy(0, duration: 0.5), SKAction.runBlock({
             self.reloadLevel()
         })]))
@@ -277,10 +327,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     func reloadLevel() {
-        
-        /* Grab reference to our SpriteKit view */
-        let skView = self.view as SKView!
-        
         /* Load Game scene */
         let scene = GameScene(fileNamed: "GameScene")
         
@@ -290,7 +336,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scene!.scaleMode = .AspectFill
         
         /* Restart game scene */
-        skView.presentScene(scene)
+        self.view!.presentScene(scene)
         
     }
     
@@ -298,6 +344,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         currentLevel += 1
         
+        runAction(GoalReached)
         ball.physicsBody?.contactTestBitMask = 0
         ball.physicsBody = nil
         ball.position = self.convertPoint(ball.position, toNode: node)

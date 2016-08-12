@@ -37,7 +37,7 @@ class MSButtonNode: SKSpriteNode {
                 self.userInteractionEnabled = false
                 
                 /* Hide */
-                self.alpha = 0.6
+                self.alpha = 0.0
                 break
             }
         }
@@ -59,8 +59,8 @@ class MSButtonNode: SKSpriteNode {
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        selectedHandler()
         state = .MSButtonNodeStateActive
+        selectedHandler()
     }
     
 }

@@ -3,7 +3,7 @@
 //  RingsUITests
 //
 //  Created by Zachary Friedman on 7/18/16.
-//  Copyright © 2016 Idk Man. All rights reserved.
+//  Copyright © 2016 Ellex All rights reserved.
 //
 
 import XCTest

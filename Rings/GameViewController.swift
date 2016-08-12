@@ -3,7 +3,7 @@
 //  Rings
 //
 //  Created by Zachary Friedman on 7/18/16.
-//  Copyright (c) 2016 Idk Man. All rights reserved.
+//  Copyright (c) 2016 Ellex All rights reserved.
 //
 
 import UIKit
@@ -14,11 +14,13 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene(fileNamed:"GameScene") {
+        if let scene = Intro(fileNamed:"Intro") {
             // Configure the view.
-            let skView = self.view as! SKView
-            skView.showsFPS = true
-            skView.showsNodeCount = true
+            
+            let skView = (self.view as! SKView)
+            
+            skView.showsFPS = false
+            skView.showsNodeCount = false
             
             /* Sprite Kit applies additional optimizations to improve rendering performance */
             skView.ignoresSiblingOrder = true
